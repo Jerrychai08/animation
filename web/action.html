@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>热血战斗 - 动漫萌新入坑指南</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0;
+            font-family: 'Microsoft YaHei', sans-serif; 
+            /* 暗红渐变背景，贴合热血主题 */
+            background: linear-gradient(135deg, #1a1a1a 0%, #3a0000 100%); 
+            color: white; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        
+        /* 主展示卡片 */
+        .card { 
+            background: rgba(0, 0, 0, 0.8); 
+            border: 1px solid #ff3333; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            width: 85%; 
+            max-width: 1000px; 
+            box-shadow: 0 0 30px rgba(255, 51, 51, 0.3);
+        }
+        
+        /* 核心：针对 16:9 宽屏的专属容器 */
+        .img-wrapper { 
+            width: 100%; 
+            aspect-ratio: 16 / 9; /* 锁定 16:9 比例，绝不裁切你的原图 */
+            background: #000;
+            position: relative;
+        }
+        
+        .img-wrapper img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain; /* 保证图片完整显示，哪怕边缘也不漏掉 */
+            display: block;
+        }
+
+        /* 文字内容区 */
+        .text-content { 
+            padding: 40px; 
+            text-align: center;
+        }
+        
+        h1 { 
+            color: #ff3333; 
+            font-size: 42px; 
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 51, 51, 0.6);
+        }
+        
+        p { 
+            font-size: 20px; 
+            line-height: 1.8; 
+            color: #ddd; 
+            margin-bottom: 10px; 
+        }
+        
+        .highlight { color: #ff3333; font-weight: bold; }
+        
+        /* 按钮 */
+        .btn { 
+            display: inline-block;
+            margin-top: 30px; 
+            color: white; 
+            background: #ff3333;
+            text-decoration: none; 
+            padding: 12px 40px; 
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 15px rgba(255, 51, 51, 0.4);
+        }
+        
+        .btn:hover { 
+            background: #cc0000; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 51, 51, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 完美的 16:9 图片展示区 -->
+        <div class="img-wrapper">
+            <!-- 相对路径，确保你的图在 image 文件夹里叫 1.jpg -->
+            <img src="../image/1.jpg" alt="鬼灭之刃">
+        </div>
+        
+        <div class="text-content">
+            <h1>热血战斗</h1>
+            <p>强调友情和努力，打斗场面极多。角色们为了守护重要的东西挥洒汗水。</p>
+            <p><strong>代表作：</strong><span class="highlight">《鬼灭之刃》</span></p>
+            
+            <!-- 返回主页 -->
+            <a href="../index.html" class="btn">← 返回主页</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>动漫萌新入坑指南 - 主页</title>
+    <style>
+        /* 主页改为高级的纯色渐变，不设图片 */
+        body { margin: 0; padding: 0; font-family: 'Microsoft YaHei'; background: linear-gradient(135deg, #fce4ec 0%, #e3f2fd 100%); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        h1 { font-size: 50px; color: #333; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        p { font-size: 18px; color: #666; margin-bottom: 40px; }
+        .nav-box { max-width: 800px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .nav-box a { display: inline-block; margin: 10px; padding: 15px 30px; background: #ffb6c1; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 18px; transition: 0.3s; box-shadow: 0 4px 10px rgba(255,182,193,0.4); }
+        .nav-box a:hover { background: #87ceeb; transform: translateY(-5px); box-shadow: 0 8px 15px rgba(135,206,235,0.4); }
+    </style>
+</head>
+<body>
+    <h1>动漫萌新入坑指南</h1>
+    <p>点击下方分类，开启你的二次元之旅</p>
+    <div class="nav-box">
+        <!-- 相对路径：进入 web 文件夹 -->
+        <a href="web/action.html">🔥 热血战斗</a>
+        <a href="web/healing.html">🍵 治愈日常</a>
+        <a href="web/isekai.html">🪐 异世界</a>
+        <a href="web/romance.html">🌸 恋爱校园</a>
+        <a href="web/scifi.html">🔍 科幻悬疑</a>
+        <a href="web/conclusion.html">✨ 结语</a>
+    </div>
+</body>
+</html>
